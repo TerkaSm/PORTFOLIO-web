@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as v;
+
+// body .heading-primary .heading-secondary .paragraph
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Baumans', cursive;
+}
+
+
+// .paragraph {
+//     font-size: v.$default-font-size;
+
+//     &:not(:last-child) {
+//         margin-bottom: 3rem;
+//     }
+// }

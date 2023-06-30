@@ -1,0 +1,18 @@
+
+//media queries
+
+@mixin media-min ($pocet) {
+    @media screen and (min-width:$pocet) {
+        @content;
+    }
+}
+
+
+// center
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
