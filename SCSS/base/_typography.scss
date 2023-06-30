@@ -3,21 +3,32 @@
 // body .heading-primary .heading-secondary .paragraph
 
 body {
-    font-family: 'Anonymous Pro', monospace;
+    font-family: v.$font-body;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 2rem;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Baumans', cursive;
+    font-family: v.$font-special;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-primary {
+    font-size: clamp(2.75rem, 8vw, 4.5rem);
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 
-// .paragraph {
-//     font-size: v.$default-font-size;
+.paragraph {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 2;
 
-//     &:not(:last-child) {
-//         margin-bottom: 3rem;
-//     }
-// }
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
