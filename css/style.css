@@ -37,7 +37,7 @@ a {
 }
 
 .paragraph {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.3rem);
   line-height: 2;
 }
 .paragraph:not(:last-child) {
@@ -72,6 +72,12 @@ a {
 .u-wrapper {
   max-width: 1040px;
   margin: 0 auto;
+}
+
+.u-background {
+  background-color: #032336;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -411,6 +417,79 @@ template {
   width: 20vw;
   min-width: 120px;
   max-width: 195px;
+}
+
+.mobile-nav {
+  position: relative;
+}
+.mobile-nav__icon {
+  align-self: first baseline;
+  width: 40px;
+  z-index: 2000;
+}
+.mobile-nav__icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3000;
+  opacity: 0;
+  width: 0;
+}
+.mobile-nav__checkbox {
+  display: none;
+}
+.mobile-nav__background {
+  height: 10px;
+  width: 10px;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #032336;
+}
+.mobile-nav__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  opacity: 0;
+  width: 0;
+}
+.mobile-nav__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+.mobile-nav__item {
+  padding: 1rem;
+}
+.mobile-nav__link {
+  color: #FEF6E1;
+  font-family: "Baumans", cursive;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid #FEF6E1;
+}
+.mobile-nav__link:hover, .mobile-nav__link:active {
+  border-bottom: 1px solid #F56767;
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__background {
+  transform: scale(400);
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__nav {
+  opacity: 1;
+  width: 100%;
+}
+.mobile-nav__checkbox:checked ~ .mobile-nav__icon-close {
+  opacity: 1;
+  width: 100%;
 }
 
 .section-hero {
