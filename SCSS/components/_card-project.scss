@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+
+
+.card-project {
+    max-width: 333px;
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+}

@@ -9,10 +9,11 @@
 @use 'base/reset';
 
 @use 'components/buttons';
+@use 'components/card-project';
 
 // @use 'layout/footer';
 @use 'layout/header';
-// @use 'layout/grid';
+@use 'layout/grid';
 @use 'layout/navigation';
 
 @use 'pages/home';

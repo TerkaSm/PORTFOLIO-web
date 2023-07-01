@@ -24,4 +24,8 @@
     background-color: v.$color-primary;
     width: 100vw;
     height: 100vh;
+
+    &--color-tertiary {
+        background-color: v.$color-tertiary;
+    }
 }
