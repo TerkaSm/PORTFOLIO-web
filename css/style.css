@@ -438,8 +438,8 @@ template {
 }
 .card__side--back {
   transform: rotateY(180deg);
-  background-color: #F56767;
-  border: 2px solid #FEF6E1;
+  background-color: #E29F5B;
+  border: 3px solid #FEF6E1;
   font-size: 1.2rem;
 }
 .card:hover .card__side--front {
