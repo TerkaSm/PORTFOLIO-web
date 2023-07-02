@@ -5,16 +5,35 @@
 .section-hero {
     background-color: v.$color-primary;
     padding: v.$spacer;
+    height: 90vh;
+
+    &__wrapp-img {
+        display: block;
+        flex: 2;
+    }
 
     &__img {
         display: block;
         width: 30vw;
         min-width: 140px;
-        max-width: 260px;
+        max-width: 230px;
         border-radius: 50%;
         border: 1px solid v.$color-background;
         margin: 0 auto 60px auto;
         text-align: center;
+
+        @include mx.media-min(750px) {
+            margin-top: 60px;
+        }
+    }
+
+    &__content {
+        flex: 3;
+    }
+
+    @include mx.media-min(750px) {
+        display: flex;
+        gap: v.$spacer-double;
     }
 }
 

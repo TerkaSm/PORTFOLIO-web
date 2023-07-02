@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as mx;
 
 
-.grid {
+.grid-img {
     display: grid;
     grid-template-columns: 333px;
     gap: 1.8rem;

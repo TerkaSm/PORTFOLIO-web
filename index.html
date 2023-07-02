@@ -21,8 +21,6 @@
             <input class="mobile-nav__checkbox" type="checkbox" id="mobile-nav-toggle">
             <label class="mobile-nav__button" for="mobile-nav-toggle"><img class="mobile-nav__icon" src="icons/icon-nav.svg" alt="navigace"></label>
 
-            <div class="mobile-nav__background">&nbsp;</div>
-
             <a class="mobile-nav__icon-close" href="index.html"><img src="icons/icon-close.svg" alt="ikona zavřít"></a>
 
             <nav class="mobile-nav__nav">
@@ -34,11 +32,20 @@
                 </ul>
             </nav>
         </div>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Rozcestník</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Záznam cesty</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="u-background">
         <section class="section-hero u-wrapper u-padding-top-medium">
-            <img class="section-hero__img" src="images/profil-foto.jpg" alt="profil foto">
+            <figcaption class="section-hero__wrapp-img"><img class="section-hero__img" src="images/profil-foto.jpg" alt="profil foto"></figcaption>
             <div class="section-hero__content">
                 <h1 class="heading-primary">Cesta do IT</h1>
                 <p class="paragraph u-margin-left-medium">Ahoj. Kompletně měním kariéru. Z veterinární sestry se stane frontend vývojářka. Chceš taky změnit kariéru? </p>
@@ -48,12 +55,23 @@
     </div>
 
     <div class="u-background u-background--color-tertiary">
-        <section class="section-projects u-wrapper u-padding-top-medium">
+        <section class="section-projects u-wrapper u-padding-top-medium u-padding-bottom-medium">
             <h2 class="heading-secondary">Projekty</h2>
-            <div class="grid">
-                <figcaption class="card-project"><img class="card-project__img" src="images/projekt-azyl.jpg" alt="projekt kočičí azyl"></figcaption>
-                <figcaption class="card-project"><img class="card-project__img" src="images/projekt-azyl.jpg" alt="projekt kočičí azyl"></figcaption>
-                <figcaption class="card-project"><img class="card-project__img" src="images/projekt-azyl.jpg" alt="projekt kočičí azyl"></figcaption>
+            <div class="grid-img">
+                <div class="placeholder">
+                    <div class="card">
+                        <figcaption class="card__side card__side--front">
+                            <img class="card__img" src="images/projekt-azyl.jpg" alt="projekt kočičí azyl">
+                        </figcaption>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <ul>
+                                <li>web pro útulek podle vlastního návrhu ve Figmě</li>
+                                <li>HTML, SCSS, BEM, responzivní</li>
+                            </ul>
+                            <div class="card__links"><a href="#">Web</a><span> | </span><a href="#">Repozitář</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

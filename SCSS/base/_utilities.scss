@@ -14,16 +14,16 @@
 .u-padding-top-medium {padding-top: 4rem !important;}
 .u-padding-left-small {padding-left: 1.3rem !important;}
 .u-padding-left-medium {padding-left: 3.2rem !important;}
+.u-padding-bottom-medium {padding-bottom: 4rem !important;}
 
 .u-wrapper {
-    max-width: 1040px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .u-background {
     background-color: v.$color-primary;
     width: 100vw;
-    height: 100vh;
 
     &--color-tertiary {
         background-color: v.$color-tertiary;
