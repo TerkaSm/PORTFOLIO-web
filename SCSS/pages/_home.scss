@@ -2,6 +2,8 @@
 @use '../abstracts/mixins' as mx;
 
 
+//HERO
+
 .section-hero {
     background-color: v.$color-primary;
     padding: v.$spacer;
@@ -37,7 +39,45 @@
     }
 }
 
+
+//PROJECTS
+
 .section-projects {
     padding: v.$spacer;
     margin: 0 auto;
+}
+
+// SKILLS
+
+.section-skills {
+    padding: v.$spacer;
+    margin: 0 auto;
+
+    &__flex {
+        margin: 0 auto;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        gap: v.$spacer-double;
+        justify-content: space-between;
+
+        @include mx.media-min(850px) {
+            flex-direction: row;
+        }
+    }
+
+    &__col-1-of-2 {
+        
+    }
+
+    &__icons {
+        display: grid;
+        grid-template-columns: 62px 62px 62px;
+        gap: v.$spacer;
+        justify-items: center;
+
+        @include mx.media-min(600px) {
+            grid-template-columns: 62px 62px 62px 62px;
+        }
+    }
 }
