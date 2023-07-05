@@ -67,9 +67,9 @@
         }
     }
 
-    &__col-1-of-2 {
+    // &__col-1-of-2 {
         
-    }
+    // }
 
     &__icons {
         display: grid;
@@ -80,6 +80,13 @@
 
         @include mx.media-min(600px) {
             grid-template-columns: 62px 62px 62px 62px;
+        }
+    }
+
+    &__icon {
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }

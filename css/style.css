@@ -426,12 +426,20 @@ template {
   text-transform: uppercase;
   font-size: clamp(0.8rem, 2vw, 1rem);
   letter-spacing: 0.3125rem;
-  padding: 6px 25px;
+  padding: 10px 25px;
   border: 2px solid #FEF6E1;
+  line-height: 1.4;
 }
 .btn--primary {
   color: #F56767;
   border: 2px solid #F56767;
+}
+.btn--primary:hover {
+  color: #032336;
+  background-color: #F56767;
+  border: 2px solid #F56767;
+  font-weight: 700;
+  transform: scale(1.1);
 }
 .btn--dark {
   color: #032336;
@@ -550,6 +558,8 @@ template {
   background-color: #E29F5B;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
   border: 3px solid #FEF6E1;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.4s 0.2s;
 }
 @media screen and (min-width: 750px) {
   .popup__content {
@@ -692,6 +702,24 @@ template {
 }
 .navigation__item {
   margin: 0 20px;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.navigation__item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #F56767;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.navigation__item:hover::before {
+  transform: scaleX(1);
 }
 .navigation__link {
   color: #FEF6E1;
@@ -699,9 +727,6 @@ template {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 10px 10px 10px 10px;
-}
-.navigation__link:hover {
-  border-bottom: 2px solid #F56767;
 }
 
 .section-hero {
@@ -771,4 +796,7 @@ template {
   .section-skills__icons {
     grid-template-columns: 62px 62px 62px 62px;
   }
+}
+.section-skills__icon:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
