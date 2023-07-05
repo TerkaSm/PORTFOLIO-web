@@ -15,4 +15,10 @@
         border: 2px solid v.$color-secondary;
     }
 
+    &--dark {
+        color: v.$color-primary;
+        border: 2px solid v.$color-primary;
+        background-color: v.$color-quartiary;
+    }
+
 }

@@ -8,6 +8,7 @@
     background-color: v.$color-primary;
     padding: v.$spacer;
     height: 90vh;
+    min-height: 300px;
 
     &__wrapp-img {
         display: block;
@@ -74,7 +75,8 @@
         display: grid;
         grid-template-columns: 62px 62px 62px;
         gap: v.$spacer;
-        justify-items: center;
+        justify-content: center;
+
 
         @include mx.media-min(600px) {
             grid-template-columns: 62px 62px 62px 62px;
