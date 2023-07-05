@@ -11,6 +11,12 @@
     border: 2px solid v.$color-background;
     line-height: 1.4;
 
+    &:hover {
+        color: v.$color-primary;
+        border: 2px solid v.$color-primary;
+        transform: scale(1.1);
+    }
+
 
     &--primary {
         color: v.$color-secondary;
@@ -29,6 +35,13 @@
         color: v.$color-primary;
         border: 2px solid v.$color-primary;
         background-color: v.$color-quartiary;
+
+        &:hover {
+            color: v.$color-quartiary;
+            background-color: v.$color-primary;
+            border: 2px solid v.$color-primary;
+            transform: scale(1.1);
+        }
     }
 
 }

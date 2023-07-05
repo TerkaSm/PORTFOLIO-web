@@ -67,9 +67,6 @@
         }
     }
 
-    // &__col-1-of-2 {
-        
-    // }
 
     &__icons {
         display: grid;
@@ -88,5 +85,40 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+}
+
+
+
+// TOOLS
+
+.section-tools {
+    padding: v.$spacer;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacer-double;
+
+
+    &__col-1-of-2 {
+
+    }
+
+    &__content {
+        color: v.$color-primary;
+        font-weight: 700;
+    }
+
+    &__wrapp-img {
+
+    }
+
+    &__img {
+        max-width: 95vw;
+        pad: v.$spacer;
+    }
+
+    @include mx.media-min(750px) {
+        flex-direction: row;
     }
 }

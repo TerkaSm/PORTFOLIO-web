@@ -12,6 +12,7 @@
 
 .u-margin-left-medium {margin-left: 3.2rem !important;}
 
+.u-padding-top-small {padding-top: 2rem !important;}
 .u-padding-top-medium {padding-top: 4rem !important;}
 .u-padding-left-small {padding-left: 1.3rem !important;}
 .u-padding-left-medium {padding-left: 3.2rem !important;}
@@ -30,5 +31,9 @@
 
     &--color-tertiary {
         background-color: v.$color-tertiary;
+    }
+
+    &--color-quartiary {
+        background-color: v.$color-quartiary;
     }
 }
