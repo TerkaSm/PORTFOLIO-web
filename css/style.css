@@ -831,8 +831,8 @@ template {
   font-weight: 700;
 }
 .section-tools__img {
-  max-width: 95vw;
-  pad: 1.25rem;
+  max-width: 90vw;
+  padding: 1.25rem;
 }
 @media screen and (min-width: 750px) {
   .section-tools {

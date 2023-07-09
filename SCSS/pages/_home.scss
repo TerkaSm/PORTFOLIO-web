@@ -114,8 +114,8 @@
     }
 
     &__img {
-        max-width: 95vw;
-        pad: v.$spacer;
+        max-width: 90vw;
+        padding: v.$spacer;
     }
 
     @include mx.media-min(750px) {
